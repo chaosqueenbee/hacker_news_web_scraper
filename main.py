@@ -15,8 +15,6 @@ class Combinator:
         return self.combinator_html.prettify()
         
     def get_top_three_links(self):
-        # body = list(self.combinator_html.children)[0]
-        # return list(body)
         links = self.combinator_html.find_all(class_='titlelink')
         return links[0:3]
     
